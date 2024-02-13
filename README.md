@@ -1,4 +1,4 @@
-//PRIME NUMBER 
+ //PRIME NUMBER 
 #include <stdlib.h>
 #include <stdbool.h>
 #include <stdio.h>
