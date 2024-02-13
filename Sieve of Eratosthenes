@@ -19,14 +19,12 @@ int main() {
         }
     }
 
-    printf("Prime numbers up to %d: ", x);
     for (int i = 2; i <= x; i++) {
         if (!arr[i]) {
             printf("%d ", i);
         }
     }
 
-    free(arr);
 
     return EXIT_SUCCESS;
 }
