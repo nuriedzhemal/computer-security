@@ -6,7 +6,7 @@ void decrypt(char cypher[], int key)
     for (int i =0; cypher[i] !='\n' && cypher[i] != '\0'; i++){
         char current = cypher[i];
         if('A'<= current && current <='Z')
-        cypher[i] = 'A'+ (current - 'A' - key)%26;
+        cypher[i] = 'A'+ (current - 'A' - key + 26)%26;
 
     }
 
