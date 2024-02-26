@@ -18,7 +18,7 @@ int main(){
    int key;
    
  printf("Enter text: ");
- scanf("%s", &str);
+ scanf("%s", str);
  printf("Enter key value: ");
  scanf("%d", &key);
     
