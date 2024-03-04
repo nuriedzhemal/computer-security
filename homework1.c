@@ -14,10 +14,8 @@ char* caesar_cipher(char* str, int key) {
             char base = (str[i] >= 'A' && str[i] <= 'Z') ? 'A' : 'a';
             cipher[i] = ((str[i] - base + key) % 26) + base;
         } else if (str[i] == ' ') {
-            // Preserve spaces
             cipher[i] = ' ';
         } else {
-            // Encrypt special symbols directly
             cipher[i] = str[i] + key;
         }
         i++;
@@ -37,10 +35,10 @@ char* caesar_decrypt(char* cypher, int key) {
             char base = (cypher[i] >= 'A' && cypher[i] <= 'Z') ? 'A' : 'a';
             str[i] = ((cypher[i] - base - key + 26) % 26) + base;
         } else if (cypher[i] == ' ') {
-            // Preserve spaces
+
             str[i] = ' ';
         } else {
-            // Decrypt special symbols directly
+
             str[i] = cypher[i] - key;
         }
         i++;
